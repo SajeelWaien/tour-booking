@@ -1,0 +1,23 @@
+.HeroBtn {
+    background: #F16B51;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    display: inline-flex;
+
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    word-wrap: break-word;
+
+    padding: 16px 12px;
+
+    p {
+        white-space: nowrap;
+    }
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+.TourGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: start;
+    gap: 30px;
+    padding: 50px 0px;
+
+    @media screen and (max-width: 620px) and (min-width: 0px) {
+        grid-template-columns: auto;
+    };
+
+    @media screen and (max-width: 980px) and (min-width: 620px) {
+        grid-template-columns: auto auto;
+    };
+
+    @media screen and (max-width: 1200px) and (min-width: 980px) {
+        grid-template-columns: auto auto auto;
+    };
+
+    
+}

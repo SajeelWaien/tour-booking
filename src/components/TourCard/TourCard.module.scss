@@ -1,0 +1,33 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+        .ActionButtons {
+            display: flex;
+        }
+
+        .ActionInfo {
+            display: none;
+        }
+    }
+    
+    .ActionButtons {
+        display: none;
+        height: 40px;
+        color: white;
+    }
+}
+
+.ActionInfo {
+    height: 40px;
+    display: auto;
+}
+
+.ActionButtons {
+    height: 40px;
+    display: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}

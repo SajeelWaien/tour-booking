@@ -1,0 +1,28 @@
+@import "../../styles/common.scss";
+
+.NavBg {
+    width: 100%;
+    height: 86;
+    left: 0;
+    top: 0;
+    background: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-grow: 1;
+    flex-basis: 500px;
+
+    > li {
+        justify-content: center;
+    }
+}
+
+.ExploreNowBtn {
+    @extend .HeroBtn
+}

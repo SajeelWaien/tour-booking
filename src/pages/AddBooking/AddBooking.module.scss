@@ -1,0 +1,31 @@
+@import '../../styles/vars.scss';
+
+.Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+.FormContainer {
+    padding-left: 5rem;
+
+    @media screen and (max-width: 900px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.Image {
+    background-image: url('../../assets/tour-details/grid-img-1.png');
+    background-size: cover;
+    height: calc(100vh - $navHeight) ;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
