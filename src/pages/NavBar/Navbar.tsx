@@ -9,7 +9,7 @@ const Navbar = (props: Props) => {
     let location = useLocation();
 
     return (
-        <Container maxWidth='lg' className={styles.NavBg}>
+        <Container maxWidth='xl' className={styles.NavBg}>
             <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'} width={'100%'}>
                 <Link to={'/'}>
                     <div className="Group131" style={{ width: 85.66, height: 25.97, left: 0, top: 14 }}>

@@ -102,6 +102,11 @@ const Explore = (props: Props) => {
     }
   }, [query])
 
+  const chipClick = (place: string) => {
+    dispatch(setLocation(place))
+    navigate('/tours')
+  }
+
   const location = entities.find((ele) => ele.name === locationValue)
 
   return (
@@ -161,7 +166,7 @@ const Explore = (props: Props) => {
           <IconButton color='primary' onClick={handleSearch}><SearchOutlined /></IconButton>
         </Stack>
         <Stack direction={'row'} flexWrap={'wrap'} gap={1} marginTop={5} justifyContent={'space-around'}>
-          {places.map(place => <Chip key={place} label={place} variant="outlined" onClick={() => { }} />)}
+          {places.map(place => <Chip key={place} label={place} variant="outlined" onClick={() => chipClick(place)} />)}
         </Stack>
       </Box >
     </div >
